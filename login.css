@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bc.jpg);
+    /* background-color: #b185db; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    max-height: 50vh;
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   box-shadow: 0 0 4px whitesmoke;
+    
+    border-radius: 30px;
+    padding: 20px;
+}
+h1{
+    margin: 20px;
+    text-shadow: 1px 2px 2px white,
+    0 0 2px lightgreen,
+    0 0 4px lightgreen,
+    1px 1px 3px lightgreen,
+    0px 0px 4px lightgreen;
+    
+}
+#email, #pass{
+    height: 2rem;
+    width: 13rem;
+    border-radius: 30px;
+    padding: 5px;
+   margin-bottom: -5px;
+   background: transparent;
+   color: white;
+}
+::placeholder{
+    color: white;
+    
+
+
+}
+.box{
+    height: 2.5rem;
+    width: 13rem;
+     display: flex;
+     justify-content: space-between;
+     font-size: 12px;
+    
+     margin-top: -5px;
+    
+}
+.box input[type="ckeckbox"],
+.box label{
+    cursor: pointer;
+}
+#loginbtn{
+    margin: 10px;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 30px;
+    background-color: transparent;
+    box-shadow: 0 0 6px rgb(227, 17, 227);
+    cursor: pointer;
+}
+#forgot{
+    text-decoration: none;
+    
+}
+#forgot:hover{
+    color: lightskyblue;
+}
+#reg{
+    font-size: 15px;
+    
+    
+}
+#register_now{
+    text-decoration: none;
+}
+#register_now:hover{
+    color: lightskyblue;
+}

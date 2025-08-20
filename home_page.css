@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+   background-color: white; 
+}
+.subscribe{
+height: 50px;
+width: 100%;
+line-height: 50px;
+font-size: 15px;
+
+}
+.subscribe h3{
+    margin-left: 22px;
+}
+
+.subscribe a{
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.hed2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.nav ul li{
+    display: inline;
+    position: relative; /* CHANGED: needed for absolute dropdown */
+}
+.nav ul li a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: black;cursor: pointer;
+    font-size: 17px;
+}
+
+.nav ul li a:hover {
+    color: blue;
+}
+
+.nav{
+    margin: 30px 0px 5px 45px;
+}
+.logo{
+    display: flex;
+  margin-top: 10px;
+  margin-right: 180px;
+  
+}
+#img2{
+    margin-left: 30px;
+   filter: contrast(200%);
+}
+.logo img{
+    border-radius: 30px;
+}
+.slider{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+   
+}
+ .slide{
+    height: 70vh;
+    width: 100%;
+    object-fit:;
+    background-position: left;
+    position: absolute;
+    transition: 3s ease-in-out 3s;
+
+}
+
+/* CHANGED DROPDOWN FIXES */
+.dropdown {
+    position: absolute;
+    top: 100%;        /* CHANGED: show below About Us */
+    left: 0;          /* CHANGED: align with parent li */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: black;
+    padding: 5px;
+}
+
+.nav li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.dropdown ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li{
+    /* display: block;        */
+    background-color: black;
+    color: wheat;
+}
+
+.dropdown ul li a {
+  margin-top: 10px;
+  color: white;
+  margin-left: 10px;
+  display: block;           
+}
+.welcome{
+    color: white;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 200px;
+    font-size: xx-large;
+    font-style: oblique;
+    
+
+}
+.middle-para{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+   justify-content: center; 
+   letter-spacing: 1px;
+   margin-bottom: 50px;
+}
+.container{
+    margin-top: 50px;
+   height: 90vh;
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+}
+.container a{
+    color: rgb(175, 218, 18);
+}
+.container p:first-of-type{
+    font-size: 27px;
+  
+}
+.middle-para p:not(:first-of-type){
+    font: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+     letter-spacing: 1px;
+}
+ .container ul  {
+    align-self: flex-start;
+     /* margin: 0;
+    padding: 0; */
+    list-style-position: inside; 
+}
+.container ul li{
+    margin-top: 3px;
+    list-style-position: inside;
+}
+#btn{
+    
+    
+    height: 2rem;
+    width: 7rem;
+    /* text-shadow: 0 0 1px greenyellow; */
+    
+    color: white;
+    font-size: 17px;
+    padding: 4px;
+    background-color: #80b918;
+}
+.exp-container {
+    margin-top: 70px;
+    /* height: 110vh; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    }
+    .exp-container h1{
+        margin-top: 50px;
+    }
+.inner-text{
+    margin-top: 50px;
+    /* height: 70vh; */
+    width: 100vw;
+    display: flex;
+   
+    align-items: center;
+     justify-content: space-around;
+    
+}
+.box1{
+    margin: 0;
+    padding: 0;
+height: 30%;
+width: 20vw;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+/* margin: 10px; */
+overflow: hidden;
+word-wrap: break-word;
+/* text-align: center; */
+animation: alternate;
+}
+.inner-text img{
+    width: 250px;
+}
+.inner-text p{
+    align-self: left;
+}
+.box1 h3{
+    /* align-items: center; */
+    justify-content: center;
+    align-self: center;
+    
+}
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+
