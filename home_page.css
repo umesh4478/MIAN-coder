@@ -215,7 +215,7 @@ align-items: stretch;
 overflow: hidden;
 word-wrap: break-word;
 /* text-align: center; */
-animation: alternate;
+
 }
 .inner-text img{
     width: 250px;
