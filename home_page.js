@@ -1,21 +1,17 @@
-let slides = document.querySelectorAll(".slide");
+let slides = document.querySelector(".slides");
+
 let counter = 0;
+let totalSlides = document.querySelectorAll(".slide").length;
 
-
-slides.forEach((slide, index) => {
-    slide.style.left = `${index * 100}%`;
-});
-
-
-const slideimg = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${counter * 100}%)`;
-        slide.style.transition = "transform 3s ease-in-out"; 
-    });
+const showSlide = () => {
+  slides.style.transform = `translateX(-${counter * 100}%)`;
 };
 
+// ✅ Show first slide initially
+showSlide();
 
-// setInterval(() => {
-//     counter = (counter + 1) % slides.length; 
-//     slideimg();
-// }, 5000);   
+// ✅ Auto play
+setInterval(() => {
+  counter = (counter + 1) % totalSlides;
+  showSlide();
+}, 5000);

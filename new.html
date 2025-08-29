@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Yoga Studio</title>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  background: linear-gradient(to bottom right, #f8f9fa, #fff);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #135C55;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.cta-btn {
+  background: #FF867C;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ff5f52;
+}
+
+/* Image Section */
+.image-container {
+  position: relative;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Offer Badge */
+.offer-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #00bcd4;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50%;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-badge strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.offer-badge p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content {
+    margin-bottom: 30px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="content">
+      <h1>Your online yoga studio</h1>
+      <p>
+        We believe in the power of yoga to heal, empower, and connect.
+        Wherever you are on your journey, come as you are and let’s take it together.
+      </p>
+      <button class="cta-btn">Start free trial</button>
+    </div>
+    <div class="image-container">
+      <img src="off" alt="Yoga pose">
+      <div class="offer-badge">
+        <strong>Offer</strong>
+        <p>Get 10% off now!</p>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
