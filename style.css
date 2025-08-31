@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    color: whitesmoke;
+}
+header {
+  background-color: #d5d0cd;
+  padding-top: 50px;
+  position: relative;
+}
+
+/* Top subscribe bar */
+.subscribe {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-size: 15px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #333;
+  color: #fff;
+  z-index: 5;
+}
+.subscribe h3 { margin-left: 22px; font-weight: 500; }
+.subscribe a { color: yellowgreen; text-decoration: none; }
+
+/* Header second row */
+.hed2 {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Navigation */
+.nav { margin: 30px 0 5px 45px; }
+.nav ul { list-style: none; }
+.nav ul li { display: inline-block; position: relative; }
+.nav ul li a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: #000;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1;
+}
+.nav ul li a:hover { color: blue; }
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: all .2s ease;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  min-width: 220px;
+  padding: 8px;
+  z-index: 2;
+}
+
+.nav li:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown ul { display: flex; flex-direction: column; }
+.dropdown ul li { display: block; }
+.dropdown ul li a {
+  color: #222;
+  margin: 0;
+  padding: 10px 12px;
+  display: block;
+  border-radius: 6px;
+}
+.dropdown ul li a:hover { background: #f5f7f5; color: #111; }
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 180px 0 0;
+}
+#img2 { filter: contrast(200%);
+  mix-blend-mode: multiply;
+ }
+.logo img { border-radius: 30px;
+mix-blend-mode: multiply;
+}
+
+.container{
+display: flex;
+ border: 2px solid #240046;
+  height: 85%;
+  width: 60%;
+  /* margin-left: 35vh; */
+  /* margin-top: 9vh; */
+  background-color: #240046;
+  justify-content: space-around;
+  
+}
+
+main{
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container h1{
+    margin-left: 45vh;
+    margin-top: 6vh;
+    text-align: center;
+}
+.container p{
+    margin-top: 5vh;
+    margin-left: 5vh;
+    font-size: larger;
+}
+
+
+.box2{
+    display: flex;
+    
+}
+.box {
+    color: white;
+}
+.box p a{
+    text-decoration: none;
+    color: white;
+}
+.box p a:hover{
+    text-decoration: underline;
+
+
+}
+
+.img{
+    margin-top: 20vh;
+    margin-right: 6vh;
+}
+.Blog{
+    margin-right: 35vh;
+}
+.me2{
+    margin-right: 46vh;
+}
+.me3{
+    margin-right: 46vh;
+}
+.me4{
+    margin-right: 22vh;
+}
+.margin{
+    margin-right: 20vh;
+}
+footer{
+  background-color: #1E4B4B;
+  color: white;
+}
+footer a{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 1s;
+  font-family: system-ui, -apple-system, Arial, sans-serif;;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 30px;
+  line-height: 30px;
+  margin-right: 80px;
+}
+
+.platform-logo i{
+  margin: 5px;
+}
+.platform-logo i:hover{
+  background-color: gray;
+}
+.section1 li{
+  list-style: none;
+  text-decoration: underline;
+}
+.section1 li::before{
+  content: "🗺️";
+  display: inline-block;
+  text-decoration: none;
+}
+.section1 li::after{
+  content: ":";
+  display: inline-block;
+  text-decoration: none;
+}
+.platform-logo{
+  margin: 17px 0;
+}
+.section1 p:nth-of-type(3){
+  margin: 10px 0;
+  line-height: normal;
+  
+}
+.section1 a{
+  line-height:normal;
+  font-size: small;
+}
+ .section1 p:nth-of-type(4){
+  text-decoration: underline;
+ }
+
+.section2 p:first-of-type,
+.section3 p:first-of-type,
+.section4 p:first-of-type,
+.section5 p:first-of-type{
+  font-weight: bold;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.footer-container h2{
+  margin-bottom: 25px;
+  
+  font-size: 24px;
+  font-weight: normal;
+  color: white; /* Hot pink */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-align: center;
+}
